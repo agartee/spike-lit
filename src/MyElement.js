@@ -28,7 +28,7 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <h1>${this.header} Nr. ${this.counter}!</h2>
-      <p>${this.name.first}</p>
+      <p>${this.name?.first}</p>
       <button @click=${this.__increment}>increment</button>
     `;
   }
