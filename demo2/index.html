@@ -5,6 +5,14 @@
   <script type="module" src="http://localhost:3000/my-element.js"></script>
 </head>
 <body>
-  <my-element .header="hello"></my-element>
+  <my-element id="myElement" header="hi"></my-element>
+
+  <script>
+    window.onload = () => {
+      const component = document.getElementById('myElement');
+      component.name = { first: 'Adam' };
+    }
+  </script>
 </body>
+
 </html>
